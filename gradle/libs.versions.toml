@@ -1,0 +1,37 @@
+[versions]
+
+compose = "2024.05.00"
+compose-animation = "1.7.0-alpha08"
+compose-activity = "1.9.0"
+compose-lifecycle = "2.7.0"
+compose-navigation = "2.7.7"
+core = "1.13.1"
+collections = "0.3.7"
+
+android = "8.3.2"
+kotlin = "1.9.23"
+
+sdk-min = "26"
+sdk-compile = "34"
+sdk-target = "34"
+compose-compiler = "1.5.11"
+java-target = "17"
+
+[libraries]
+
+compose = { group = "androidx.compose", name = "compose-bom", version.ref = "compose" }
+compose-ui = { group = "androidx.compose.ui", name = "ui" }
+compose-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+compose-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+compose-animation = { group = "androidx.compose.animation", name = "animation", version.ref = "compose-animation" }
+compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "compose-activity" }
+compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "compose-lifecycle" }
+compose-navigation = { group = "androidx.navigation", name = "navigation-compose", version.ref = "compose-navigation" }
+core = { group = "androidx.core", name = "core-ktx", version.ref = "core" }
+collections = { group = "org.jetbrains.kotlinx", name = "kotlinx-collections-immutable", version.ref = "collections" }
+
+[plugins]
+
+android = { id = "com.android.application", version.ref = "android" }
+kotlin = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
